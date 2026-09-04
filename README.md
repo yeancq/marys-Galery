@@ -20,20 +20,34 @@ marys-landing/
 └── README.md
 ```
 
-## Reemplazar las imágenes por obras reales
+## Las obras ya están cargadas
 
-Todas las imágenes son **bocetos de ejemplo generados** (no son obra real de Mary's), pensados solo para mostrar cómo se ve el diseño. Para poner las obras reales:
+Las 20 obras reales de Mary's ya están en `assets/images/gallery/` y conectadas en la galería. Antes de publicar, revisá esto:
 
-1. Exportá cada obra en buena resolución (recomendado: JPG o PNG, lado mayor de al menos 1600px, peso ideal por debajo de 500 KB — usá [squoosh.app](https://squoosh.app) para comprimir sin perder calidad visual).
-2. Reemplazá los archivos en `assets/images/` manteniendo el mismo nombre, **o** usá nombres nuevos y actualizá las rutas `src` en `index.html`.
-3. En `index.html`, cada obra de la galería es un botón `<button class="gallery-item ...">` con estos atributos que alimentan el detalle ampliado (lightbox):
-   - `data-title` — nombre de la obra
-   - `data-technique` — técnica y soporte
-   - `data-size` — dimensiones
-   - `data-year` — año
-   - `data-desc` — descripción corta
-   - `data-img` — ruta de la imagen en alta resolución para el detalle ampliado
-4. Actualizá también el atributo `alt` de cada `<img>` con una descripción real de la obra (esto es importante para accesibilidad y SEO).
+- **Títulos**: son provisionales, puestos por mí a partir de lo que muestra cada dibujo (por ejemplo "Rey del silencio" para uno de los leones). Cambialos por los títulos reales si ya los tenés.
+- **Año**: lo tomé de la firma en cada dibujo. Dos piezas (el panda y los tigres) no tenían año legible en la firma, así que quedaron marcadas como `S/F` (sin fecha) — completalo si lo sabés.
+- **Dimensiones**: puse "Medidas a confirmar" en las 20, porque no tengo ese dato. Reemplazalo por las medidas reales de cada obra en `data-size` (ver abajo cómo).
+- **La mariposa "para Cynthia"**: esa foto tenía una dedicatoria escrita a mano ("Para: Cynthia, gracias por todo..."). La recorté para mostrar solo el dibujo en el sitio público, ya que es un mensaje personal y no parte de la obra. La imagen original completa no se subió al sitio.
+
+### Cómo editar los datos de una obra
+
+Cada obra es un `<button class="gallery-item ...">` en `index.html` con estos atributos:
+
+- `data-title` — título
+- `data-technique` — técnica y soporte
+- `data-size` — dimensiones
+- `data-year` — año
+- `data-desc` — descripción corta que aparece en el detalle ampliado
+- `data-img` — ruta de la imagen
+
+Buscá el título provisional (por ejemplo `data-title="Rey del silencio"`) en `index.html` y editá los valores directamente ahí. También actualizá el `alt` de la etiqueta `<img>` correspondiente si cambiás el título.
+
+### Agregar una obra nueva más adelante
+
+1. Poné la imagen en `assets/images/gallery/` (JPG recomendado, lado mayor ~1500px).
+2. Copiá un bloque `<button class="gallery-item reveal">...</button>` completo de `index.html`, pegalo antes de `</div>` (cierre de `gallery-grid`), y cambiá `src`, `data-*` y el `style="--i:N"` por el siguiente número de índice disponible (esto solo varía el ritmo de la flotación, no es obligatorio que sea único).
+3. Alterná la clase `tilt-a`, `tilt-b`, `tilt-c` o `tilt-d` en el `<span class="gallery-frame ...">` para variar la inclinación.
+
 
 ## Editar textos
 
