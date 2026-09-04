@@ -21,6 +21,53 @@
 </head>
 <body>
 
+<div class="bg-atmosphere" aria-hidden="true">
+  <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <!-- lápiz, esquina superior izquierda -->
+    <g class="bg-pencil" transform="translate(120,60) rotate(35)">
+      <rect x="-9" y="0" width="18" height="150" fill="#3a3a36"/>
+      <polygon points="-9,0 9,0 0,-28" fill="#242320"/>
+      <circle cx="0" cy="-28" r="2" fill="#111"/>
+      <rect x="-9" y="150" width="18" height="10" fill="#57564f"/>
+      <rect x="-9" y="160" width="18" height="16" rx="3" fill="#8f8d86"/>
+    </g>
+    <!-- lápiz, esquina superior derecha -->
+    <g class="bg-pencil" transform="translate(1430,140) rotate(-50)">
+      <rect x="-8" y="0" width="16" height="130" fill="#3a3a36"/>
+      <polygon points="-8,0 8,0 0,-24" fill="#242320"/>
+      <circle cx="0" cy="-24" r="1.8" fill="#111"/>
+      <rect x="-8" y="130" width="16" height="9" fill="#57564f"/>
+      <rect x="-8" y="139" width="16" height="14" rx="3" fill="#8f8d86"/>
+    </g>
+    <!-- lápiz, inferior izquierda -->
+    <g class="bg-pencil" transform="translate(80,820) rotate(-20)">
+      <rect x="-9" y="-150" width="18" height="150" fill="#3a3a36"/>
+      <polygon points="-9,-150 9,-150 0,-178" fill="#242320"/>
+      <circle cx="0" cy="-178" r="2" fill="#111"/>
+      <rect x="-9" y="0" width="18" height="10" fill="#57564f"/>
+      <rect x="-9" y="10" width="18" height="16" rx="3" fill="#8f8d86"/>
+    </g>
+    <!-- lápiz, inferior derecha, cruzado -->
+    <g class="bg-pencil" transform="translate(1500,780) rotate(58)">
+      <rect x="-8" y="-140" width="16" height="140" fill="#3a3a36"/>
+      <polygon points="-8,-140 8,-140 0,-166" fill="#242320"/>
+      <circle cx="0" cy="-166" r="1.8" fill="#111"/>
+      <rect x="-8" y="0" width="16" height="9" fill="#57564f"/>
+      <rect x="-8" y="9" width="16" height="14" rx="3" fill="#8f8d86"/>
+    </g>
+    <!-- garabatos / trazos sueltos -->
+    <g class="bg-scribble" fill="none" stroke="#3a3a36" stroke-width="2" stroke-linecap="round">
+      <path d="M260 250 C300 220 340 260 320 300 C300 335 250 320 260 280"/>
+      <path d="M1250 620 C1300 590 1350 610 1345 655 C1340 690 1290 695 1275 665"/>
+      <path d="M700 780 C740 760 770 785 755 815"/>
+    </g>
+    <g class="bg-hatch" stroke="#3a3a36" stroke-width="1.4" opacity="0.6">
+      <path d="M1150 200 L1230 175 M1155 215 L1235 190 M1160 230 L1238 206"/>
+      <path d="M380 700 L455 680 M384 715 L460 695 M388 730 L462 712"/>
+    </g>
+  </svg>
+</div>
+
 <a class="skip-link" href="#contenido">Ir al contenido</a>
 
 <header class="site-header">
@@ -56,33 +103,45 @@
 
     <div class="gallery-grid">
 
-      <button class="gallery-item reveal tilt-b" type="button" data-title="Rama de invierno" data-technique="Grafito sobre papel Fabriano" data-size="30 × 40 cm" data-year="2024" data-desc="Estudio de una rama seca sostenida en el aire, resuelto con líneas sueltas y un sombreado mínimo que deja respirar el papel." data-img="assets/images/artwork-1.svg">
-        <img src="assets/images/artwork-1.svg" alt="Dibujo a grafito de una rama con hojas" draggable="false">
+      <button class="gallery-item reveal" type="button" data-title="Rama de invierno" data-technique="Grafito sobre papel Fabriano" data-size="30 × 40 cm" data-year="2024" data-desc="Estudio de una rama seca sostenida en el aire, resuelto con líneas sueltas y un sombreado mínimo que deja respirar el papel." data-img="assets/images/artwork-1.svg">
+        <span class="gallery-frame tilt-b">
+          <img src="assets/images/artwork-1.svg" alt="Dibujo a grafito de una rama con hojas" draggable="false">
+        </span>
         <span class="gallery-caption">Rama de invierno · 2024</span>
       </button>
 
-      <button class="gallery-item reveal tilt-c" type="button" data-title="Estudio de mano" data-technique="Grafito sobre papel" data-size="25 × 25 cm" data-year="2023" data-desc="Un ejercicio de anatomía resuelto en pocas horas: la mano en reposo, con el peso de los dedos marcado por el trazo, sin corregir." data-img="assets/images/artwork-2.svg">
-        <img src="assets/images/artwork-2.svg" alt="Estudio a grafito de una mano" draggable="false">
+      <button class="gallery-item reveal" type="button" data-title="Estudio de mano" data-technique="Grafito sobre papel" data-size="25 × 25 cm" data-year="2023" data-desc="Un ejercicio de anatomía resuelto en pocas horas: la mano en reposo, con el peso de los dedos marcado por el trazo, sin corregir." data-img="assets/images/artwork-2.svg">
+        <span class="gallery-frame tilt-c">
+          <img src="assets/images/artwork-2.svg" alt="Estudio a grafito de una mano" draggable="false">
+        </span>
         <span class="gallery-caption">Estudio de mano · 2023</span>
       </button>
 
-      <button class="gallery-item reveal tilt-a" type="button" data-title="Perfil en silencio" data-technique="Grafito sobre papel Canson" data-size="40 × 50 cm" data-year="2024" data-desc="Retrato de perfil trabajado en capas, buscando la quietud del rostro antes de girar la cabeza." data-img="assets/images/artwork-3.svg">
-        <img src="assets/images/artwork-3.svg" alt="Retrato de perfil a grafito" draggable="false">
+      <button class="gallery-item reveal" type="button" data-title="Perfil en silencio" data-technique="Grafito sobre papel Canson" data-size="40 × 50 cm" data-year="2024" data-desc="Retrato de perfil trabajado en capas, buscando la quietud del rostro antes de girar la cabeza." data-img="assets/images/artwork-3.svg">
+        <span class="gallery-frame tilt-a">
+          <img src="assets/images/artwork-3.svg" alt="Retrato de perfil a grafito" draggable="false">
+        </span>
         <span class="gallery-caption">Perfil en silencio · 2024</span>
       </button>
 
-      <button class="gallery-item reveal tilt-d" type="button" data-title="Naturaleza detenida" data-technique="Grafito sobre papel" data-size="30 × 30 cm" data-year="2023" data-desc="Un jarrón con flores dibujado con la luz entrando de un solo lado, dejando el resto de la escena apenas insinuado." data-img="assets/images/artwork-4.svg">
-        <img src="assets/images/artwork-4.svg" alt="Naturaleza muerta a grafito, jarrón con flores" draggable="false">
+      <button class="gallery-item reveal" type="button" data-title="Naturaleza detenida" data-technique="Grafito sobre papel" data-size="30 × 30 cm" data-year="2023" data-desc="Un jarrón con flores dibujado con la luz entrando de un solo lado, dejando el resto de la escena apenas insinuado." data-img="assets/images/artwork-4.svg">
+        <span class="gallery-frame tilt-d">
+          <img src="assets/images/artwork-4.svg" alt="Naturaleza muerta a grafito, jarrón con flores" draggable="false">
+        </span>
         <span class="gallery-caption">Naturaleza detenida · 2023</span>
       </button>
 
-      <button class="gallery-item reveal tilt-b" type="button" data-title="Vuelo bajo" data-technique="Grafito sobre papel" data-size="30 × 30 cm" data-year="2024" data-desc="Un ave justo antes de tomar altura, con las alas resueltas en trazos rápidos que contrastan con el cuerpo, más trabajado." data-img="assets/images/artwork-5.svg">
-        <img src="assets/images/artwork-5.svg" alt="Dibujo a grafito de un ave en vuelo" draggable="false">
+      <button class="gallery-item reveal" type="button" data-title="Vuelo bajo" data-technique="Grafito sobre papel" data-size="30 × 30 cm" data-year="2024" data-desc="Un ave justo antes de tomar altura, con las alas resueltas en trazos rápidos que contrastan con el cuerpo, más trabajado." data-img="assets/images/artwork-5.svg">
+        <span class="gallery-frame tilt-b">
+          <img src="assets/images/artwork-5.svg" alt="Dibujo a grafito de un ave en vuelo" draggable="false">
+        </span>
         <span class="gallery-caption">Vuelo bajo · 2024</span>
       </button>
 
-      <button class="gallery-item reveal tilt-c" type="button" data-title="Pliegue" data-technique="Grafito sobre papel" data-size="40 × 50 cm" data-year="2025" data-desc="Estudio de tela: cuatro pliegues superpuestos, resueltos únicamente con el grosor y la dirección de la línea." data-img="assets/images/artwork-6.svg">
-        <img src="assets/images/artwork-6.svg" alt="Estudio a grafito de pliegues de tela" draggable="false">
+      <button class="gallery-item reveal" type="button" data-title="Pliegue" data-technique="Grafito sobre papel" data-size="40 × 50 cm" data-year="2025" data-desc="Estudio de tela: cuatro pliegues superpuestos, resueltos únicamente con el grosor y la dirección de la línea." data-img="assets/images/artwork-6.svg">
+        <span class="gallery-frame tilt-c">
+          <img src="assets/images/artwork-6.svg" alt="Estudio a grafito de pliegues de tela" draggable="false">
+        </span>
         <span class="gallery-caption">Pliegue · 2025</span>
       </button>
 
