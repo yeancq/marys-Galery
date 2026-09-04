@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <filter id="paperGrain6">
+      <feTurbulence type="fractalNoise" baseFrequency="0.87" numOctaves="2" seed="44" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.022 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="600" height="750" fill="#F5F3ED"/>
+  <rect width="600" height="750" filter="url(#paperGrain6)"/>
+  <g fill="none" stroke="#28271F" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 120 C200 160 180 220 230 250 C280 280 260 340 310 370 C360 400 340 460 390 500 C430 530 420 580 450 620" stroke-width="2" opacity="0.75"/>
+    <path d="M180 130 C225 172 210 228 258 258 C305 288 288 345 335 378 C382 408 365 465 412 505 C448 534 440 582 468 618" stroke-width="1.6" opacity="0.6"/>
+    <path d="M210 140 C250 182 238 235 282 265 C326 295 312 350 355 382 C398 412 384 465 425 505" stroke-width="1.4" opacity="0.5"/>
+    <path d="M120 160 C165 200 150 255 195 285 C240 315 222 372 265 405 C308 435 292 488 335 525 C368 552 358 598 385 632" stroke-width="1.8" opacity="0.68"/>
+  </g>
+  <g stroke="#28271F" stroke-width="0.5" opacity="0.28">
+    <path d="M200 300 L245 290 M204 315 L248 305 M208 330 L250 322"/>
+    <path d="M300 430 L345 420 M304 445 L348 435 M308 460 L350 452"/>
+  </g>
+</svg>

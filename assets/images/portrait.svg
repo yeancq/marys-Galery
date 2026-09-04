@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" width="500" height="620">
+  <defs>
+    <filter id="paperGrainPortrait">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="17" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.02 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="500" height="620" fill="#F5F3ED"/>
+  <rect width="500" height="620" filter="url(#paperGrainPortrait)"/>
+  <g fill="none" stroke="#26251F" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180 560 C165 480 170 410 195 360 C180 330 182 290 205 265 C198 230 215 195 250 185 C255 155 285 135 315 145 C345 135 372 158 372 190 C398 200 410 232 396 260 C412 285 408 322 385 345 C398 385 388 430 358 455 C365 495 348 535 315 555 C310 585 280 605 245 598 Z" stroke-width="2.2" opacity="0.88"/>
+    <path d="M310 250 C320 258 322 270 314 278" stroke-width="1.4" opacity="0.6"/>
+    <path d="M288 244 C296 240 305 242 310 249" stroke-width="1.2" opacity="0.5"/>
+    <path d="M330 310 C348 316 358 332 350 348 C342 362 324 360 316 348" stroke-width="1.5" opacity="0.55"/>
+    <path d="M295 380 C318 390 336 386 348 372" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  <g stroke="#26251F" stroke-width="0.5" opacity="0.28">
+    <path d="M215 400 L262 388 M218 415 L265 403 M221 430 L266 420"/>
+  </g>
+</svg>

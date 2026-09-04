@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 860" width="700" height="860">
+  <defs>
+    <filter id="paperGrainHero">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="9" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.026 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="700" height="860" fill="#F7F5EF"/>
+  <rect width="700" height="860" filter="url(#paperGrainHero)"/>
+  <g fill="none" stroke="#221F1B" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 720 C230 660 220 600 235 545 C210 520 200 480 215 440 C195 415 195 375 220 345 C210 310 225 270 260 250 C255 210 280 175 320 168 C325 130 360 105 400 112 C430 90 470 100 480 135 C515 135 540 165 530 200 C555 215 565 250 545 280 C560 310 555 350 528 372 C535 405 518 435 488 445 C495 480 475 512 440 522 C445 560 420 592 382 600 C382 640 358 675 320 685 C310 715 285 730 260 720 Z" stroke-width="2.6" opacity="0.92"/>
+    <path d="M420 300 C432 312 434 328 424 340 C414 350 398 348 392 336" stroke-width="1.8" opacity="0.7"/>
+    <path d="M380 292 C390 288 400 290 406 298" stroke-width="1.4" opacity="0.55"/>
+    <path d="M440 380 C462 388 476 408 466 428 C456 446 434 446 422 432" stroke-width="1.8" opacity="0.65"/>
+    <path d="M400 460 C430 472 452 468 468 452" stroke-width="1.8" opacity="0.6"/>
+    <path d="M310 380 C300 420 296 460 305 495" stroke-width="1.4" opacity="0.5"/>
+  </g>
+  <g stroke="#221F1B" stroke-width="0.6" opacity="0.32">
+    <path d="M330 370 L390 355 M334 388 L394 373 M338 406 L396 393 M342 424 L398 412"/>
+    <path d="M310 520 L365 508 M314 536 L368 524 M318 552 L368 542"/>
+  </g>
+</svg>
